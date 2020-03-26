@@ -41,6 +41,7 @@ nav li {
   z-index: -999;
   height: auto;
   width: 100%;
+  padding-top: 20px;
 }
 
 .headline {
@@ -49,19 +50,21 @@ nav li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   margin-top: -400px;
+  padding-left: 680px;
+  padding-right: 50px;
 }
 
 .headline h2 {
   color: #385ca7;
   font-size: 50px;
   margin-bottom: 20px;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 
 .headline p {
-  padding-left: 600px;
+  /* padding-left: 700px; */
   /* margin-bottom: 20px; */
   font-size: 20px;
 }
@@ -70,6 +73,7 @@ nav li {
   color: #385ca7;
   margin-bottom: 20px;
   padding-right: 50px;
+  margin-top: 20px;
 }
 
 .headline a {
