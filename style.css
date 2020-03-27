@@ -105,6 +105,207 @@ body {
   transform: scale(1.2);
 }
 
+@media (max-width: 1024px) {
+  body {
+    margin: 0;
+    background-color: black;
+    background-image: url(assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 160% 120%;
+  }
+
+  .game-score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Galindo", cursive;
+    padding: 30px 0;
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+  }
+
+  .score {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+
+  .comp-score {
+    border: 5px solid orangered;
+  }
+
+  .user-score {
+    border: 5px solid #17225eff;
+  }
+
+  .info {
+    text-align: center;
+    font-family: "Galindo", cursive;
+    color: darkblue;
+    font-size: 40px;
+    padding-top: 40px;
+    margin-bottom: -70px;
+  }
+
+  .fight-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    margin-top: 7vh;
+  }
+
+  .comp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .comp-area img {
+    padding-left: 15vw;
+    width: 90%;
+    height: auto;
+  }
+
+  .user-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .user-area img {
+    padding-right: 15vw;
+    width: 90%;
+    height: auto;
+  }
+
+  .user-input {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* background-color: burlywood; */
+    height: 20vh;
+    /* padding: 1vw 30vw 1vw 30vw; */
+    /* margin-top: 5vh; */
+  }
+
+  .user-input img {
+    height: 140px;
+    margin: 0 10px;
+    width: auto;
+  }
+
+  /* end media 1024px */
+}
+
+@media (max-width: 835px) {
+  body {
+    margin: 0;
+    background-color: black;
+    background-image: url(assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 160% 120%;
+  }
+
+  .game-score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Galindo", cursive;
+    padding: 30px 0;
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+  }
+
+  .score {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+
+  .comp-score {
+    border: 5px solid orangered;
+  }
+
+  .user-score {
+    border: 5px solid #17225eff;
+  }
+
+  .info {
+    text-align: center;
+    font-family: "Galindo", cursive;
+    color: darkblue;
+    font-size: 40px;
+    margin-bottom: -70px;
+  }
+
+  .fight-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    margin-top: 7vh;
+  }
+
+  .comp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .comp-area img {
+    padding-left: 15vw;
+    width: 80%;
+    height: auto;
+  }
+
+  .user-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .user-area img {
+    padding-right: 15vw;
+    width: 80%;
+    height: auto;
+  }
+
+  .user-input {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* background-color: burlywood; */
+    height: 20vh;
+    /* padding: 1vw 30vw 1vw 30vw; */
+    /* margin-top: 5vh; */
+  }
+
+  .user-input img {
+    height: 120px;
+    margin: 0 10px;
+    width: auto;
+  }
+
+  /* end media 835px */
+}
+
 /* ipad lanscape */
 
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
@@ -208,7 +409,8 @@ body {
     padding: 20px 0;
     font-size: 30px;
     color: white;
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
+    margin-top: -5px;
     margin-bottom: -5vh;
   }
 
@@ -276,6 +478,105 @@ body {
     height: 140px;
     width: auto;
     margin: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    background-image: url(assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 170% 130%;
+    overflow: hidden;
+  }
+
+  .game-score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Galindo", cursive;
+    padding: 20px 0;
+    font-size: 20px;
+    color: white;
+    /* padding-top: 5vh; */
+    /* margin-bottom: -5vh; */
+    /* background-color: rgba(165, 42, 42, 0.418); */
+  }
+
+  .score {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+
+  .comp-score {
+    border: 5px solid orangered;
+  }
+
+  .user-score {
+    border: 5px solid #17225eff;
+  }
+
+  .info {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: darkblue;
+    font-size: 40px;
+    margin-top: -10px;
+    /* margin-bottom: -50px; */
+    padding-top: 50px;
+    /* background-color: rgba(0, 255, 255, 0.534); */
+  }
+
+  .fight-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* background-color: rgba(0, 0, 255, 0.603); */
+    width: 100vw;
+  }
+
+  .comp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .comp-area img {
+    padding-right: 5px;
+    height: 40%;
+    width: auto;
+  }
+
+  .user-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .user-area img {
+    padding-left: 5px;
+    height: 40%;
+    width: auto;
+  }
+
+  .user-input {
+    height: 200px;
+    width: 100vw;
+    padding-bottom: 60px;
+    margin-top: 120px;
+  }
+
+  .user-input img {
+    z-index: 999;
+    height: 120px;
+    width: auto;
   }
 }
 
