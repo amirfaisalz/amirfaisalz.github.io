@@ -376,3 +376,101 @@ body {
     width: auto;
   }
 }
+
+@media (max-width: 360px) {
+  body {
+    margin: 0;
+    background-image: url(assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 160% 130%;
+    overflow: hidden;
+  }
+
+  .game-score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Galindo", cursive;
+    padding: 20px 0;
+    font-size: 15px;
+    color: white;
+    /* padding-top: 5vh; */
+    /* margin-bottom: -5vh; */
+    /* background-color: rgba(165, 42, 42, 0.418); */
+  }
+
+  .score {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+
+  .comp-score {
+    border: 5px solid orangered;
+  }
+
+  .user-score {
+    border: 5px solid #17225eff;
+  }
+
+  .info {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: darkblue;
+    font-size: 40px;
+    margin-top: -10px;
+    /* margin-bottom: -50px; */
+    padding-top: 50px;
+    /* background-color: rgba(0, 255, 255, 0.534); */
+  }
+
+  .fight-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* background-color: rgba(0, 0, 255, 0.603); */
+    width: 100vw;
+  }
+
+  .comp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .comp-area img {
+    padding-right: 5px;
+    height: 40%;
+    width: auto;
+  }
+
+  .user-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .user-area img {
+    padding-left: 5px;
+    height: 40%;
+    width: auto;
+  }
+
+  .user-input {
+    height: 200px;
+    width: 100vw;
+    padding-bottom: 120px;
+  }
+
+  .user-input img {
+    z-index: 999;
+    height: 80px;
+    width: auto;
+  }
+}
