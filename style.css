@@ -1,183 +1,373 @@
 * {
+  box-sizing: border-box;
+}
+
+/* biar background full screen */
+html {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body {
   margin: 0;
-  padding: 0;
-  font-family: "Nunito", sans-serif;
+  background-color: black;
+  background-image: url(assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 140% 120%;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #385ca7;
-  color: white;
-  padding: 10px 60px;
-}
-
-header a {
-  text-decoration: none;
-  color: white;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  margin-top: 10px;
-}
-
-nav ul a {
-  text-decoration: none;
-  color: white;
-  scroll-behavior: smooth;
-}
-
-nav li {
-  margin-left: 40px;
-}
-
-.webDeveloper {
-  display: flex;
-}
-
-.webDeveloper img {
-  z-index: -999;
-  height: auto;
-  width: 100%;
-  padding-top: 20px;
-}
-
-.headline {
-  z-index: 999;
-  margin-bottom: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: -400px;
-  padding-left: 680px;
-  padding-right: 50px;
-}
-
-.headline h2 {
-  color: #385ca7;
-  font-size: 50px;
-  margin-bottom: 20px;
-  /* padding-right: 50px; */
-}
-
-.headline p {
-  /* padding-left: 700px; */
-  /* margin-bottom: 20px; */
-  font-size: 20px;
-}
-
-.headline h3 {
-  color: #385ca7;
-  margin-bottom: 20px;
-  padding-right: 50px;
-  margin-top: 20px;
-}
-
-.headline a {
-  background-color: #385ca7;
-  width: 30px;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 40px;
-  color: #385ca7;
-  font-size: 45px;
-  margin-bottom: 20px;
-}
-
-.portofolioImage {
+.game-score {
   display: flex;
   justify-content: space-around;
-}
-
-.company {
-  display: flex;
-  flex-direction: column;
-}
-
-.company img {
-  padding: 50px;
-  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.54);
-  margin-bottom: -30px;
-}
-
-.company a {
-  text-decoration: none;
-  text-align: center;
-  margin-bottom: 45px;
-}
-
-.aboutMe {
-  background-color: #385ca7;
-  margin-top: -70x;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.aboutMe h2 {
-  text-align: center;
-  margin-top: -10px;
-  color: white;
-  font-size: 45px;
-  padding-top: 20px;
-}
-
-.aboutMe div {
-  display: flex;
-  justify-content: space-around;
-}
-
-.aboutMe p {
-  width: 700px;
-  color: white;
-  padding: 30px 50px 0 50px;
-}
-
-.aboutMe img {
-  height: 450px;
-  width: auto;
-  margin-left: -20px;
-  margin-top: -100px;
-}
-
-.aboutMe span {
-  font-size: 30px;
-}
-
-.contact {
-  background-color: white;
-  margin-top: -70x;
-}
-
-.contact h2 {
-  text-align: center;
-  margin-top: -10px;
-  color: #385ca7;
-  font-size: 45px;
-  padding-top: 20px;
-}
-
-.contact p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-
-  color: #385ca7;
-  font-weight: 700;
-  font-size: 20px;
-  padding-bottom: 30px;
-}
-
-footer {
-  background-color: #385ca7;
+  align-items: center;
+  font-family: "Galindo", cursive;
   padding: 20px 0;
+  font-size: 20px;
+  color: white;
 }
 
-footer p {
+.score {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+.comp-score {
+  border: 5px solid orangered;
+}
+
+.user-score {
+  border: 5px solid #17225eff;
+}
+
+.info {
   text-align: center;
-  color: white;
+  font-family: "Galindo", cursive;
+  color: darkblue;
+  font-size: 40px;
+  margin-bottom: -70px;
+}
+
+.fight-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+  margin-top: 7vh;
+}
+
+.comp-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+}
+
+.comp-area img {
+  padding-left: 15vw;
+  width: 70%;
+  height: auto;
+}
+
+.user-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+}
+
+.user-area img {
+  padding-right: 15vw;
+  width: 70%;
+  height: auto;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1vw 30vw 1vw 30vw;
+  margin-top: 5vh;
+  transition: transform 0.2s;
+}
+
+.user-input img {
+  height: auto;
+  width: 20%;
+}
+
+.user-input img:hover {
+  transform: scale(1.2);
+}
+
+/* ipad lanscape */
+
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    margin: 0;
+    background-image: url(assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 150% 130%;
+    overflow: hidden;
+  }
+
+  .game-score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Galindo", cursive;
+    padding: 20px 0;
+    font-size: 30px;
+    color: white;
+    padding-top: 5vh;
+    margin-bottom: -5vh;
+  }
+
+  .score {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+
+  .comp-score {
+    border: 5px solid orangered;
+  }
+
+  .user-score {
+    border: 5px solid #17225eff;
+  }
+
+  .info {
+    text-align: center;
+    font-family: "Galindo", cursive;
+    color: darkblue;
+    font-size: 40px;
+    margin-bottom: -50px;
+  }
+
+  .fight-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .comp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .comp-area img {
+    height: 50%;
+    width: auto;
+  }
+
+  .user-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .user-area img {
+    height: 50%;
+    width: auto;
+  }
+
+  .user-input img {
+    height: auto;
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    background-image: url(assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 160% 130%;
+    overflow: hidden;
+  }
+
+  .game-score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Galindo", cursive;
+    padding: 20px 0;
+    font-size: 30px;
+    color: white;
+    padding-top: 5vh;
+    margin-bottom: -5vh;
+  }
+
+  .score {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+
+  .comp-score {
+    border: 5px solid orangered;
+  }
+
+  .user-score {
+    border: 5px solid #17225eff;
+  }
+
+  .info {
+    text-align: center;
+    font-family: "Galindo", cursive;
+    color: darkblue;
+    font-size: 40px;
+    margin-top: 150px;
+    margin-bottom: -50px;
+  }
+
+  .fight-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .comp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .comp-area img {
+    height: 45%;
+    width: auto;
+  }
+
+  .user-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .user-area img {
+    height: 45%;
+    width: auto;
+  }
+
+  .user-input {
+    margin-top: -10px;
+  }
+
+  .user-input img {
+    height: 140px;
+    width: auto;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 0;
+    background-image: url(assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 150% 130%;
+    overflow: hidden;
+  }
+
+  .game-score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Galindo", cursive;
+    padding: 20px 0;
+    font-size: 15px;
+    color: white;
+    padding-top: 5vh;
+    margin-bottom: -5vh;
+  }
+
+  .score {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+
+  .comp-score {
+    border: 5px solid orangered;
+  }
+
+  .user-score {
+    border: 5px solid #17225eff;
+  }
+
+  .info {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: darkblue;
+    font-size: 40px;
+    margin-bottom: -50px;
+  }
+
+  .fight-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .comp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .comp-area img {
+    padding-right: 5px;
+    height: 40%;
+    width: auto;
+  }
+
+  .user-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .user-area img {
+    padding-left: 5px;
+    height: 40%;
+    width: auto;
+  }
+
+  .user-input {
+    height: 200px;
+    width: 100vw;
+    padding-bottom: 120px;
+  }
+
+  .user-input img {
+    z-index: 999;
+    height: 80px;
+    width: auto;
+  }
 }

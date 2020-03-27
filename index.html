@@ -3,141 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Developer</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Galindo&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <a href="index.html"><h1>Amir Faisal Z</h1></a>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li>
-            <a href="https://amirfaisalz.github.io/rpsgame">Portofolio</a>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="webDeveloper">
-        <img src="img/webDeveloper.jpg" alt="webDeveloper" />
-      </section>
-      <section>
-        <div class="headline">
-          <h2>Certified Web Developer</h2>
-          <p>
-            Amir Faisal Z Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Fusce id magna quis arcu sollicitudin fringilla. Nulla magna
-            nisi, gravida nec nibh quis, pellentesque laoreet arcu.
-          </p>
-          <h3>Startup speed, Enterprise scale</h3>
-        </div>
-      </section>
-
-      <section class="portofolio">
-        <h2 id="portofolio">
-          Portofolio (imaginary)
-        </h2>
-        <div class="portofolioImage">
-          <div class="company">
-            <a href="https://www.pertamina.com/" target="_blank"
-              ><img src="img/pertamina-logo.jpg" alt="Pertamina"
-            /></a>
-            <a href="https://www.pertamina.com/" target="_blank">
-              <h3>PT. Pertamina (Persero)</h3></a
-            >
-          </div>
-          <div class="company">
-            <a href="https://pgn.co.id/" target="_blank"
-              ><img src="img/pgn.jpg" alt="PGN"
-            /></a>
-            <a href="https://pgn.co.id/" target="_blank"
-              ><h3>PT Perusahaan Gas Negara (Persero)</h3></a
-            >
-          </div>
-          <div class="company">
-            <a href="https://kai.id/" target="_blank"
-              ><img src="img/pt-kai-logo.jpg" alt="PT KAI"
-            /></a>
-            <a href="https://kai.id/" target="_blank"
-              ><h3>PT Kereta Api Indonesia (Persero)</h3></a
-            >
-          </div>
+    <!-- game container -->
+    <div class="game-container">
+      <div class="game-score">
+        <!-- game info comp score -->
+        <div class="score comp-score">
+          COMP SCORE : <span id="comp-score">0</span>
         </div>
 
-        <div class="portofolioImage">
-          <div class="company">
-            <a href="https://www.pln.co.id/" target="_blank"
-              ><img src="img/pln-logo.jpg" alt="PLN"
-            /></a>
-            <a href="https://www.pln.co.id/" target="_blank">
-              <h3>PT PLN (Persero)</h3></a
-            >
-          </div>
-          <div class="company">
-            <a href="https://www.sucofindo.co.id/" target="_blank"
-              ><img src="img/LOGO-SUCOFINDO.jpg" alt="PGN"
-            /></a>
-            <a href="https://www.sucofindo.co.id/" target="_blank"
-              ><h3>PT Sucofindo</h3></a
-            >
-          </div>
-          <div class="company">
-            <a href="https://www.bi.go.id/id/Default.aspx" target="_blank"
-              ><img src="img/logo-BI.jpg" alt="PT KAI"
-            /></a>
-            <a href="https://www.bi.go.id/id/Default.aspx" target="_blank"
-              ><h3>Bank Indonesia</h3></a
-            >
-          </div>
+        <!-- game info user score -->
+        <div class="score user-score">
+          YOUR SCORE : <span id="user-score">0</span>
         </div>
-      </section>
-      <section class="aboutMe">
-        <h2>About Me</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id
-            magna quis arcu sollicitudin fringilla. Nulla magna nisi, gravida
-            nec nibh quis, pellentesque laoreet arcu. Donec vel quam vulputate,
-            rutrum metus at, porttitor ante. Quisque in finibus sem. Cras
-            euismod ipsum velit, non tristique mi posuere sit amet.
-
-            <br /><br />
-
-            Vivamus euismod velit purus, nec tempor justo fermentum vitae. Etiam
-            mattis, elit eget porta condimentum, odio nibh elementum sapien,
-            quis suscipit ligula metus nec nisi. Sed tempus nisi ante, id
-            blandit dolor sagittis in. Morbi ut condimentum mi. Praesent at
-            consectetur mauris. Mauris et diam ultricies, sollicitudin augue
-            volutpat, aliquam velit. Duis pulvinar, nibh a sagittis blandit,
-            dolor turpis euismod ex, eu ornare odio tellus vel nisl. Cras
-            consectetur risus dolor, nec posuere ipsum congue ac.
-
-            <br /><br />
-
-            <span> Amir Faisal Zamzami</span>
-          </p>
-          <img src="img/amir.png" alt="Amir Faisal Zamzami" />
+      </div>
+      <div class="info">lose</div>
+      <!-- fight area -->
+      <div class="fight-area">
+        <div class="comp-area">
+          <img src="assets/img/rock.png" alt="comp-image" class="comp-image" />
         </div>
-      </section>
-      <section class="contact">
-        <h2>Contact Me</h2>
-        <p>
-          Vivamus euismod velit purus, nec tempor justo fermentum vitae.
-          <br />
-          Etiam mattis, elit eget porta condimentum, odio nibh elementum sapien,
-          quis suscipit ligula metus nec nisi.
-        </p>
-      </section>
-    </main>
-    <footer>
-      <p>© Copyright Amir Faisal Zamzami 2020. All Rights Reserved.</p>
-    </footer>
+        <div class="user-area">
+          <img
+            src="assets/img/user-rock.png"
+            alt="user-image"
+            class="user-image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- user input -->
+    <div class="user-input">
+      <img
+        src="assets/img/user-rock.png"
+        alt="rock"
+        class="rock"
+        id="userClick"
+      />
+
+      <img
+        src="assets/img/user-paper.png"
+        alt="paper"
+        class="paper"
+        id="userClick"
+      />
+
+      <img
+        src="assets/img/user-scissor.png"
+        alt="scissor"
+        class="scissor"
+        id="userClick"
+      />
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
