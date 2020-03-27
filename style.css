@@ -297,8 +297,9 @@ body {
     padding: 20px 0;
     font-size: 15px;
     color: white;
-    padding-top: 5vh;
-    margin-bottom: -5vh;
+    /* padding-top: 5vh; */
+    /* margin-bottom: -5vh; */
+    /* background-color: rgba(165, 42, 42, 0.418); */
   }
 
   .score {
@@ -319,7 +320,10 @@ body {
     font-family: "Raleway", sans-serif;
     color: darkblue;
     font-size: 40px;
-    margin-bottom: -50px;
+    margin-top: -10px;
+    /* margin-bottom: -50px; */
+    padding-top: 50px;
+    /* background-color: rgba(0, 255, 255, 0.534); */
   }
 
   .fight-area {
@@ -327,6 +331,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 50vh;
+    /* background-color: rgba(0, 0, 255, 0.603); */
     width: 100vw;
   }
 
@@ -362,7 +367,7 @@ body {
   .user-input {
     height: 200px;
     width: 100vw;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
 
   .user-input img {
